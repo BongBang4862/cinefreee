@@ -20,7 +20,7 @@ body
     font-family: 'Quicksand', sans-serif
 
 .menu-dashboard
-    max-width 250px
+    max-width 150px
     height 100vh
     background var(--bg-menu)
     padding 20px
@@ -30,30 +30,25 @@ body
     display flex
     align-items center
     justify-content space-between
-
-.top-menu .logo
+  .logo
     display flex
     aling-items center
-
-.top-menu .logo img
-    width 200px
-    transition width .3s ease
-
-.top-menu .logo span 
-  font-size 20px
-  margin-left 20px
-  display none
-
-.top-menu .toggle
-  width 30px
-  height: 20px
-  display: flex
-  align-items: center
-  justify-content: space-between
-  cursor pointer
-
-.top-menu .toggle i
-  font-size 35px
+    img
+      width 60px
+      transition width .3s ease 
+    span 
+      font-size 20px
+      margin-left 20px
+      display none
+  .toggle
+    width 30px
+    height: 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    cursor pointer
+    i
+      font-size 35px
 
 .input-search 
   width 100%
@@ -63,51 +58,61 @@ body
   border-radius: 8px
   display: flex
   align-items: center
+  i 
+    font-size: 30px
+    margin-right: 20px
+  input
+    border: none
+    outline: none
+    background-color: transparent
+    width 100%
+    height: 30px
+    color: var(--blanco)
+    font-size: 22px
+    display none
 
-.input-search i 
-  font-size: 30px
-  margin-right: 20px
+.menu 
+  .enlace
+    width: 100%
+    padding: 20px 0 20px 17px
+    border-radius: 8px
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    cursor pointer
+    font-size: 20px
+    transition: all .3s ease
+    i
+      margin-right 20px
+      font-size 25px
+    span
+      opacity 0
+      transition opacity .3s ease;
+    &:hover
+      background-color: var(--azul)
+    
 
-.input-search input
-  border: none
-  outline: none
-  background-color: transparent
-  width 100%
-  height: 30px
-  color: var(--blanco)
-  font-size: 22px
-  display none
 
-.menu .enlace
-  width: 100%
-  padding: 20px 0 20px 17px
-  border-radius: 8px
-  display: flex
-  align-items: center
-  margin-bottom: 20px
-  cursor pointer
-  font-size: 20px
-  transition: all .3s ease
-
-.menu .enlace
-  &:hover
-    background: var(--azul)
+.menu-dashboard.open
+  max-width 300px
+  .top-menu 
+    .logo 
+      span
+        display block
+  .input-search
+    width auto
+    .input
+      display: block
+  .menu
+    .enlace
+        width auto
+        padding 20px
   
-.menu-dashboard.open .top-menu .logo span
-  display block
-
-.menu-dashboard.open .input-search
-.menu-dashboard.open .menu .enlace
-  width auto
-
-.menu-dashboard.open .input-search .input
-  display: block
-
-.menu-dashboard.open .menu .enlace
-  padding 20px
-
-.menu-dashboard.open .menu .enlace span 
-  opacity 1
+.open
+  .menu
+    .enlace
+      span 
+        opacity 1
 
 
 

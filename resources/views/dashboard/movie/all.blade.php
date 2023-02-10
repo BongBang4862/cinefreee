@@ -1,6 +1,7 @@
 @extends('connect.template')
 @section('title','Añadir Pelicula')
 
+
     @section('contenido')
     <a  data-toggle="tooltip" data-placement="top" title="Editar" href="{{url('/admin/movies/add')}}">
         <i class="fas fa-edit">Añadir Pelicula</i>
