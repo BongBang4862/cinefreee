@@ -4,9 +4,9 @@
   /* Variables */
 
 :root 
-  --blanco #e0e0e0;
-  --azul #184463;
-  --bg-menu #003053
+  --blanco #e0e0e0
+  --azul #f29c1d
+  --bg-menu  #6c7469
   --bg-body #c7e1ff
 
     //Generales
@@ -25,6 +25,10 @@ body
     background var(--bg-menu)
     padding 20px
     transition max-width .3s ease
+    &:hover
+      max-width 300px
+      
+        
 
 .top-menu
     display flex
@@ -86,7 +90,7 @@ body
       margin-right 20px
       font-size 25px
     span
-      opacity 0
+      display: none
       transition opacity .3s ease;
     &:hover
       background-color: var(--azul)
@@ -112,8 +116,8 @@ body
   .menu
     .enlace
       span 
-        opacity 1
-
+        display block
+  
 
 
 
