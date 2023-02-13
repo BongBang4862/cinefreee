@@ -19,8 +19,6 @@
 
 </head>
 <body>
-    <div class="row">
-        <div  class="col-3">
             <div class="menu-dashboard">
 
                 <div class="top-menu">
@@ -28,16 +26,7 @@
                         <img src="/static/img/logo.jpg" alt="">
                         <span>Bienvenido</span>
                     </div>
-                    <div class="toggle">
-                        <i class="fa-solid fa-toggle-on"></i>
-                    </div>
                 </div>
-        
-                <div class="input-search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" class="input" placeholder="Buscar">
-                </div>
-        
                 <div class="menu">
                     <a href="{{url('/admin/dashboard')}}">
                         <div class="enlace">
@@ -51,28 +40,30 @@
                             <span>Peliculas</span>
                         </div>
                     </a> 
-                    <div class="enlace">
-                        <i class="fa-solid fa-tv"></i>
-                        <span>Series</span>
-                    </div>
-                    <div class="enlace">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                        <span>Pedidos</span>
-                    </div>
-                    <div class="enlace">
-                        <i class="fa-solid fa-gears"></i>
-                        <span>Configuracion</span>
-                    </div>
+                    <a href="{{url('/admin/dashboard')}}">
+                        <div class="enlace">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>Series</span>
+                        </div>
+                    </a>
+                    <a href="{{url('/admin/dashboard')}}">
+                        <div class="enlace">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span>Pedidos</span>
+                        </div>
+                    </a>
+                    <a href="{{url('/admin/dashboard')}}">
+                        <div class="enlace">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>Configuracion</span>
+                        </div>
+                    </a>
                 </div>
-        
             </div>
-        </div>
-        <div class="col-9">
             @section('contenido')
    
                  {{-- para mostrar el contenido --}}
             @show
-        </div>
     </div>
     
    
@@ -80,5 +71,6 @@
 
     {{-- <script src="{{url('/css/bootstrap.min.js')}}"></script> --}}
     <script src="{{url('static/js/api.js')}}"></script>
+    <script src="{{url('static/js/modal.js')}}"></script>
 </body>
 </html>

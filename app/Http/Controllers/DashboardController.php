@@ -19,20 +19,22 @@ class DashboardController extends Controller
     public function index(){
         return view('dashboard.index');
     }
-    public function all_movies(){
+    public function all_movies()
+    {
         $movies = Movie::orderBy('id','desc')->paginate(25);
-        $data = ['movies'=>$movies];
+        $p = Movie::orderBy('id','desc')->first();
+        $cats = Category::orderBy('category','Asc')->pluck('category','id');
+        $data = ['movies'=>$movies ,'p'=>$p,'cats'=>$cats] ;
         return view('dashboard.movie.all',$data);
     }
-    public function get_movie_add(){
-        return view('dashboard.movie.add');
-    }
+    
     public function get_movie_see($id)
-    {
+    {   
+        $movies = Movie::orderBy('id','desc')->paginate(25);
         $p = Movie::findOrFail($id);
         $cats = Category::orderBy('category','Asc')->pluck('category','id');
-        $data = ['p' => $p,'cats'=>$cats];
-        return view('dashboard.movie.see', $data);
+        $data = ['p' => $p,'cats'=>$cats,'movies'=>$movies];
+        return view('dashboard.movie.all', $data);
     }
 
     public function post_movie_add(Request $request)
@@ -103,7 +105,7 @@ class DashboardController extends Controller
             $link->link = e($request->input('link'));
             
             if ($link->save()) {
-                return redirect('/admin/movies/'.$id)->with('message','Este producto se ha guardado con exito')->with('typealert','success');
+                return back()->with('message','Este producto se ha guardado con exito')->with('typealert','success');
             }
         }
     }
@@ -128,7 +130,7 @@ class DashboardController extends Controller
             $category->category_id = $request->input('category');
             
             if ($category->save()) {
-                return redirect('/admin/movies/'.$id)->with('message','Este producto se ha guardado con exito')->with('typealert','success');
+                return back()->with('message','Este producto se ha guardado con exito')->with('typealert','success');
             }
         }
     }

@@ -4,9 +4,9 @@
   /* Variables */
 
 :root 
-  --blanco #e0e0e0
+  --blanco #646c64
   --azul #f29c1d
-  --bg-menu  #6c7469
+  --bg-menu  #e1e0d9
   --bg-body #c7e1ff
 
     //Generales
@@ -20,26 +20,48 @@ body
     font-family: 'Quicksand', sans-serif
 
 .menu-dashboard
+    float left
     max-width 150px
     height 100vh
     background var(--bg-menu)
     padding 20px
-    transition max-width .3s ease
+    transition max-width 1s ease
     &:hover
       max-width 300px
-      
-        
+      transition max-width 1s ease
+      .top-menu 
+        .logo
+          img
+            width 60px
+            
+          span
+            display block
+            transition all 0.3s ease
+      .input-search
+        width auto
+        .input
+          display: block
+      .menu
+        .enlace
+            width auto
+            padding 20px
+          span 
+            opacity 1
+            transition opacity 1s ease;
+          i
+            margin-left: 0px
+            transition margin-left 1s ease;
 
 .top-menu
-    display flex
-    align-items center
-    justify-content space-between
+  display flex
+  align-items center
+  justify-content space-between
   .logo
     display flex
     aling-items center
     img
-      width 60px
-      transition width .3s ease 
+      width 100px
+      transition width 1s ease
     span 
       font-size 20px
       margin-left 20px
@@ -75,25 +97,31 @@ body
     font-size: 22px
     display none
 
-.menu 
-  .enlace
-    width: 100%
-    padding: 20px 0 20px 17px
-    border-radius: 8px
-    display: flex
-    align-items: center
-    margin-bottom: 20px
-    cursor pointer
-    font-size: 20px
-    transition: all .3s ease
-    i
-      margin-right 20px
-      font-size 25px
-    span
-      display: none
-      transition opacity .3s ease;
-    &:hover
-      background-color: var(--azul)
+.menu
+  padding: 20px
+  a
+    text-decoration none
+    color black
+    .enlace
+      width: 100%
+      padding: 20px 0 20px 17px
+      border-radius: 8px
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+      cursor pointer
+      font-size: 20px
+      transition: all .3s ease
+      i
+        margin-right 20px
+        font-size 30px
+      span
+        // display: none
+        opacity 0
+        transition opacity .1s ease;
+      &:hover
+        background-color: var(--azul)
+
     
 
 

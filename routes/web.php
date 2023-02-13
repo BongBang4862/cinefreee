@@ -14,15 +14,14 @@ use App\Http\Controllers\ContentController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+ 
 
 
 Route::prefix('/admin')->group(function()
 {
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
     Route::get('/movies', [App\Http\Controllers\DashboardController::class, 'all_movies'])->name('all movies');
-    Route::get('/movies/add', [App\Http\Controllers\DashboardController::class, 'get_movie_add'])->name('add movies');
-    Route::get('/movies/{id}', [App\Http\Controllers\DashboardController::class, 'get_movie_see'])->name('see movies');
+    Route::get('/movie/{id}', [App\Http\Controllers\DashboardController::class, 'get_movie_see'])->name('see movies');
     Route::post('/movies/add', [App\Http\Controllers\DashboardController::class, 'post_movie_add'])->name('add movies');
     Route::post('/movies/{id}/link/add', [App\Http\Controllers\DashboardController::class, 'post_link_movie_add'])->name('add links');
     Route::post('/movies/{id}/category/add', [App\Http\Controllers\DashboardController::class, 'post_category_movie_add'])->name('add category');
