@@ -42,7 +42,7 @@ class ConnectController extends Controller
             
             if (Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')],true)) {
                 if (Auth::user()->status == '100') {
-                    return redirect('/logout');
+                    return redirect('admin/logout');
                 }else{
                     return redirect('/admin/dashboard');
                 }

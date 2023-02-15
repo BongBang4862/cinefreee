@@ -64,7 +64,7 @@
    
                  {{-- para mostrar el contenido --}}
             @show
-    </div>
+    
     
    
      
