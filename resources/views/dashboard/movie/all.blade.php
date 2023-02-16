@@ -73,9 +73,9 @@
                     <span>Calificacion: </span>
                     <div class="categorias card">
                         <div class="header">
-                            Agregar Categoria<a href="" id="btn-agregar-category" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></a>
+                            Agregar Categoria<a href="#" id="btn-agregar-category" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></a>
                         </div>
-                        <div class="addCategory">
+                        <div class="addCategory" id="addCategory">
                             {!! Form::open(['url'=>'admin/movies/'.$p->id.'/category/add']) !!}
                             {!! Form::select('category', $cats, 0, ['class' => 'custom-select form-control']) !!}
                             {!! Form::submit('Guardar Categoria', ['class'=>'btn btn-success']) !!}
@@ -91,9 +91,9 @@
 
                     <div class="link card">
                         <div class="header">
-                            Agregar Link<a href="" id="btn-agregar-link" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i></a>
+                            Agregar Link<i id="btn-agregar-link" class="fa-solid fa-square-plus"></i>
                         </div>
-                        <div class="addLink">
+                        <div class="addLink" id="addLink">
                             {!! Form::open(['url'=>'admin/movies/'.$p->id.'/link/add']) !!}
                             {!! Form::text('link', null, ['class'=>'form_control']) !!} <br>
                             {!! Form::submit('Guardar', ['class'=>'btn btn-success']) !!}
