@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',function (e) {
     const link = document.getElementById('addLink');
     modal.addEventListener('click',function(e){
         hideModal(modal);
-        alert('probando')
+    
     })
     btn = [btnagregarmovie ,btnagregarlink,btnagregarcategory]
 
