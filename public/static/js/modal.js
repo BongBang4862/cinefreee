@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded',function (e) {
     const link = document.getElementById('addLink');
     modal.addEventListener('click',function(e){
         hideModal(modal);
-    
-    })
+        
+     })
     btn = [btnagregarmovie ,btnagregarlink,btnagregarcategory]
 
     btn.forEach(element => { element.addEventListener('click',function(e){
