@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded',function (e) {
     const btnagregarmovie = document.getElementById('btn-agregar-movie');
     const btnagregarlink = document.getElementById('btn-agregar-link');
     const btnagregarcategory = document.getElementById('btn-agregar-category');
+    const btncerralmodal = document.getElementById('btn-close-modal');
     const category = document.getElementById('addCategory');
     const link = document.getElementById('addLink');
-    modal.addEventListener('click',function(e){
+    btncerralmodal.addEventListener('click',function(e){
         hideModal(modal);
         
      })

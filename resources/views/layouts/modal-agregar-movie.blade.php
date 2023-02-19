@@ -55,6 +55,7 @@
                 
                     <div class="input-group margin16">
                     {!! Form::submit('Subir Pelicula', ['class'=>'btn btn-success']) !!}  
+                    <a href="#" id="btn-close-modal" class="btn btn-warning">Cerrar</a>
                     </div>
                 {!! Form::close() !!}
             </div>
