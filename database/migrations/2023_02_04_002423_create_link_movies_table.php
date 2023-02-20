@@ -15,7 +15,7 @@ class CreateLinkMoviesTable extends Migration
     {
         Schema::create('links_movies', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_movie');
+            $table->integer('movie_id');
             $table->string('link');
             $table->timestamps();
         });
