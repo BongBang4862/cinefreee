@@ -4,17 +4,14 @@
     <img src="{{url('/uploads/'.$m->file_path.'/'.$m->poster)}}" >
     <a href="/movie/{{$m->id}}"</a>Ver Pelicula</a>
 @endforeach --}}
-@extends('connect.template')
-@section('title','Cartelera')
+@extends('templates.homeTemplate')
+    @section('title','Añadir Pelicula')
+    @section('css')
 
-@section('content')
-<div class="row">
-    <header class="header">Header</header>
-    <nav class="navbar">Navbar</nav>
-    <aside class="sidebar">Sidebar</aside>
-    <article class="main">Main</header>
-    <footer class="footer">footer</footer>
-</div>
+
+
+
+
     
-@show
+
 
