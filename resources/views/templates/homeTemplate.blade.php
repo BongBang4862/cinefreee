@@ -14,7 +14,7 @@
     <body  class="grid-container">
         <header class="cabeza">Header</header>
         <nav class="navegacion">Navbar</nav>
-        <aside class="barraalado">Sidebar</aside>
+        <article class="barraalado">Sidebar</article>
         <article class="principal">Main</article>
         <footer class="pie">footer</footer>
     </body>

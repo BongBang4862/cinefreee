@@ -53,32 +53,36 @@ body
   display: grid;
   gap: 10px
   grid-template-rows 100px 50px auto 100px
-  grid-template-areas:"cabeza"\
-  "navegacion"\
-  "principal"\
-  "barraalado"\
-  "pie"\
+  grid-template-areas:
+    "cabeza"\
+    "navegacion"\
+    "principal"\
+    "barraalado"\
+    "pie"\
   
 @media (min-width: 600px)
   .grid-container
-    grid-template-columns repeat(2, 1fr)
-    grid-template-rows 100px 50px auto 100px
+    grid-template-columns:
+      repeat(2, 1fr)
+    grid-template-rows:
+      100px 50px auto 100px
     grid-template-areas:
       "cabeza cabeza"\
-      "navegacion navegacion" \
-      "barraalado principal" \
+      "navegacion navegacion"\
+      "principal barraalado"\
       "pie pie"\
 
 @media (min-width: 900px)
   .grid-container
-    grid-template-columns repeat(4, 1fr)
-    grid-template-rows 100px 50px auto 100px
-    grid-template-areas: 
+    grid-template-columns:
+      repeat(4, 1fr)
+    grid-template-rows:
+      100px auto 50px
+    grid-template-areas:
       "cabeza cabeza cabeza cabeza"\
-      "navegacion navegacion navegacion navegacion"\
-      "barraalado principal principal barraalado"\
+      "barraalado principal principal navegacion"\
       "pie pie pie pie"\
-  
+
 
 
 
