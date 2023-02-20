@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="{{url('/static/css/home.css')}}">
     </head>
     <body  class="grid-container">
-        <header class="header">Header</header>
-        <nav class="navbar">Navbar</nav>
-        <aside class="sidebar">Sidebar</aside>
-        <article class="main">Main</article>
-        <footer class="footer">footer</footer>
+        <header class="cabeza">Header</header>
+        <nav class="navegacion">Navbar</nav>
+        <aside class="barraalado">Sidebar</aside>
+        <article class="principal">Main</article>
+        <footer class="pie">footer</footer>
     </body>
 </html>

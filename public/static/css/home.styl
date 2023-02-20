@@ -29,55 +29,55 @@ body
   padding: 10px
   text-align: center
 
-.header
-  grid-area header
+.cabeza
+  grid-area cabeza
   background-color: var(--blanco)
 
-.navbar
-  grid-area: navbar
+.navegacion
+  grid-area: navegacion
   background-color: var(--blanco)
 
-.main
-  grid-area: main
+.principal
+  grid-area: principal
   background-color: var(--blanco)
 
-.sidebar
-  grid-area: sidebar
+.barraalado
+  grid-area: barraalado
   background-color: var(--blanco)
 
-.footer
-  grid-area: footer
+.pie
+  grid-area: pie
   background-color: var(--blanco)
 
 .grid-container
   display: grid;
   gap: 10px
   grid-template-rows 100px 50px auto 100px
-  grid-template-areas:"header"\
-  "navbar"\
-  "main"\
-  "sidebar"\
-  "footer"\
+  grid-template-areas:"cabeza"\
+  "navegacion"\
+  "principal"\
+  "barraalado"\
+  "pie"\
   
 @media (min-width: 600px)
   .grid-container
     grid-template-columns repeat(2, 1fr)
     grid-template-rows 100px 50px auto 100px
     grid-template-areas:
-      "header header"\
-      "navbar navbar" \
-      "sidebar main" \
-      "footer footer"\
+      "cabeza cabeza"\
+      "navegacion navegacion" \
+      "barraalado principal" \
+      "pie pie"\
 
 @media (min-width: 900px)
   .grid-container
     grid-template-columns repeat(4, 1fr)
     grid-template-rows 100px 50px auto 100px
     grid-template-areas: 
-      "header header header header"\
-      "navbar navbar navbar navbar"\
-      "sidebar main main sidebar"\
-      "footer footer footer footer"\
+      "cabeza cabeza cabeza cabeza"\
+      "navegacion navegacion navegacion navegacion"\
+      "barraalado principal principal barraalado"\
+      "pie pie pie pie"\
   
 
 
