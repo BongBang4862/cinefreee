@@ -13,7 +13,19 @@
     </head>
     <body>
         <div class="grid-container">
-            <div class="header"></div>
+            <div class="header">
+                <div class="logo">
+                    <img src="{{url('/static/img/logo.jpg')}}" alt="">
+                </div>
+                <div class="navegation">
+                    <ul>
+                        <li>Cartelera</li>
+                        <li>Categoria</li>
+                        <li>las ultimas </li>
+                        <li>Pronto...</li>
+                    </ul>
+                </div>
+            </div>
             <div class="carrousel"></div>
             <div class="sidebar"></div>
             <div class="galery"></div>
