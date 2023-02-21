@@ -11,11 +11,13 @@
         <script src="https://kit.fontawesome.com/455de5f3f1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{url('/static/css/home.css')}}">
     </head>
-    <body  class="grid-container">
-        <header class="cabeza">Header</header>
-        <nav class="navegacion">Navbar</nav>
-        <article class="barraalado">Sidebar</article>
-        <article class="principal">Main</article>
-        <footer class="pie">footer</footer>
+    <body>
+        <div class="grid-container">
+            <div class="header"></div>
+            <div class="carrousel"></div>
+            <div class="sidebar"></div>
+            <div class="galery"></div>
+            <div class="footer"></div>
+        </div>
     </body>
 </html>

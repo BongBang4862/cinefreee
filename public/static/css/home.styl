@@ -29,59 +29,60 @@ body
   padding: 10px
   text-align: center
 
-.cabeza
-  grid-area cabeza
+.header
+  grid-area header
   background-color: var(--blanco)
 
-.navegacion
-  grid-area: navegacion
+.carrousel
+  grid-area: carrousel
   background-color: var(--blanco)
 
-.principal
-  grid-area: principal
+.siderbar
+  grid-area: siderbar
   background-color: var(--blanco)
 
-.barraalado
-  grid-area: barraalado
+.galery
+  grid-area: galery
   background-color: var(--blanco)
 
-.pie
-  grid-area: pie
+.footer
+  grid-area: footer
   background-color: var(--blanco)
 
 .grid-container
+  padding 5px
   display: grid;
   gap: 10px
-  grid-template-rows 100px 50px auto 100px
+  grid-template-rows 120px 500px auto 75px
+  grid-template-columns:repeat(2, 1fr)
   grid-template-areas:
-    "cabeza"\
-    "navegacion"\
-    "principal"\
-    "barraalado"\
-    "pie"\
+    "header header"\
+    "carrousel carrousel"\
+    "sidebar galery"\
+    "footer footer"\
   
-@media (min-width: 600px)
-  .grid-container
-    grid-template-columns:
-      repeat(2, 1fr)
-    grid-template-rows:
-      100px 50px auto 100px
-    grid-template-areas:
-      "cabeza cabeza"\
-      "navegacion navegacion"\
-      "principal barraalado"\
-      "pie pie"\
+// @media (min-width: 600px)
+//   .grid-container
+//     grid-template-columns:
+//       repeat(2, 1fr)
+//     grid-template-rows:
+//       100px 50px auto 100px
+//     grid-template-areas:
+//       "header header"\
+//       "carrousel carrousel"\
+//       "sidebar galery"\
+//       "sidebar galery"\
 
-@media (min-width: 900px)
-  .grid-container
-    grid-template-columns:
-      repeat(4, 1fr)
-    grid-template-rows:
-      100px auto 50px
-    grid-template-areas:
-      "cabeza cabeza cabeza cabeza"\
-      "barraalado principal principal navegacion"\
-      "pie pie pie pie"\
+// @media (min-width: 900px)
+//   .grid-container
+//     grid-template-columns:
+//       repeat(4, 1fr)
+//     grid-template-rows:
+//       100px auto 50px
+//     grid-template-areas:
+//       "cabeza cabeza cabeza cabeza"\
+//       "barraalado principal principal navegacion"\
+//       "pie pie pie pie"\
 
 
 
