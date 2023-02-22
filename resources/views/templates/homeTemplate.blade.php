@@ -26,7 +26,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="carrousel"></div>
+            <div class="carrousel">
+                @include('templates.slider')
+            </div>
             <div class="sidebar"></div>
             <div class="galery"></div>
             <div class="footer"></div>
